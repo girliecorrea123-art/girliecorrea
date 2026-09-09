@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Girlie Correa — Meta Ads Media Buyer specializing in lead generation, Messenger campaigns, creative testing and performance optimization." name="description"/>
+<title>Girlie Correa — Meta Ads Media Buyer</title>
+<style>
+:root {
+  --navy:#07152f;
+  --navy2:#0b1e42;
+  --navy3:#112a58;
+  --blue:#2c7cff;
+  --cyan:#45d4ff;
+  --gold:#ffbe3d;
+  --coral:#ff6f61;
+  --mint:#2ed6a1;
+  --white:#ffffff;
+  --soft:#f4f7fc;
+  --ink:#10203e;
+  --muted:#60708d;
+  --line:#dfe7f4;
+  --shadow:0 18px 45px rgba(13,34,70,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 36px));margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(7,21,47,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .container{display:flex;align-items:center;justify-content:space-between;padding:15px 0}
+.brand{font-weight:900;color:#fff;font-size:20px;letter-spacing:-.03em}
+.links{display:flex;gap:22px;color:#dbe7ff;font-size:14px}
+.links a:hover{color:#fff}
+.hero{background:
+ radial-gradient(circle at 75% 20%,rgba(69,212,255,.2),transparent 32%),
+ radial-gradient(circle at 20% 70%,rgba(44,124,255,.22),transparent 36%),
+ linear-gradient(135deg,var(--navy) 0%,var(--navy2) 58%,#0c2c64 100%);
+ color:white;padding:100px 0 76px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(54px,7vw,88px);line-height:.93;letter-spacing:-.06em;margin:18px 0 20px}
+h1 span{color:var(--cyan)}
+.hero p{font-size:19px;color:#d8e4f8;max-width:720px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:10px;font-weight:850}
+.btn.primary{background:var(--blue);color:white;box-shadow:0 8px 24px rgba(44,124,255,.35)}
+.btn.secondary{border:1px solid rgba(255,255,255,.26);color:white;background:rgba(255,255,255,.06)}
+.hero-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:22px;padding:24px;box-shadow:0 26px 70px rgba(0,0,0,.2)}
+.hero-panel h3{margin:0 0 16px;font-size:18px}
+.hero-list{display:grid;gap:10px}
+.hero-list div{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.06);border-radius:12px;padding:12px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--gold);margin-top:7px;flex:none}
+.results-strip{margin-top:-36px;position:relative;z-index:5}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.metric .num{font-size:38px;font-weight:950;letter-spacing:-.05em;color:var(--navy)}
+.metric .sub{color:var(--muted);font-size:14px}
+.section{padding:82px 0}
+.section.soft{background:var(--soft)}
+.section.dark{background:var(--navy);color:#fff}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:var(--blue)}
+.dark .eyebrow{color:var(--cyan)}
+h2{font-size:clamp(36px,5vw,58px);line-height:1;letter-spacing:-.05em;margin:10px 0 20px}
+.lede{font-size:19px;color:var(--muted);max-width:780px}
+.dark .lede{color:#c9d5eb}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.about-card{background:linear-gradient(145deg,#0f2857,#0a1e43);color:#fff;border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+.about-card .mini{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:13px}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.kpi{padding:20px;border-radius:18px;border:1px solid var(--line);background:white}
+.kpi b{display:block;font-size:30px;color:var(--navy)}
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px}
+.case{background:white;border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.case-head{padding:22px 22px 18px;background:linear-gradient(135deg,#f9fbff,#edf3ff)}
+.case-no{display:inline-block;background:var(--navy);color:#fff;border-radius:8px;padding:5px 9px;font-size:12px;font-weight:900}
+.case h3{font-size:26px;margin:12px 0 4px;letter-spacing:-.03em}
+.case-tag{color:var(--blue);font-size:13px;font-weight:800}
+.case-body{padding:22px}
+.statline{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.statbox{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px}
+.statbox b{display:block;font-size:22px}
+.outcome{border-left:4px solid var(--mint);background:#effcf7;padding:14px 16px;border-radius:10px;margin:18px 0}
+.insight{border-left:4px solid var(--gold);background:#fff8e9;padding:14px 16px;border-radius:10px;margin:18px 0}
+.proof{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.proof img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);max-height:320px;object-fit:cover;object-position:top}
+.proof.one{grid-template-columns:1fr}
+.proof.one img{max-height:380px;object-fit:contain;background:#f6f8fc}
+.quote{background:var(--navy);color:#fff;border-radius:16px;padding:18px;margin-top:16px}
+.quote small{display:block;color:#b8c7e1;margin-top:8px}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}
+th,td{padding:11px 10px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.framework{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:start}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.flow-card{background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px}
+.flow-card b{color:var(--cyan)}
+.signature{font-size:28px;font-weight:900;letter-spacing:-.03em;color:var(--gold);margin-top:24px}
+.snapshot{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.snap{background:white;border-radius:16px;border:1px solid var(--line);padding:18px}
+.snap b{display:block;font-size:28px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.skill{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}
+.skill h4{font-size:18px;margin:0 0 8px}
+.footer-cta{background:linear-gradient(135deg,#0b1f45,#123775);color:#fff;padding:70px 0;text-align:center}
+.footer-cta h2{margin-bottom:12px}
+footer{background:#061226;color:#9fb0cd;padding:24px 0;text-align:center;font-size:14px}
+@media(max-width:900px){
+  .hero-grid,.about-grid,.framework{grid-template-columns:1fr}
+  .metrics,.snapshot{grid-template-columns:repeat(2,1fr)}
+  .case-grid{grid-template-columns:1fr}
+  .links{display:none}
+}
+@media(max-width:620px){
+  .metrics,.kpi-grid,.statline,.skills,.flow{grid-template-columns:1fr}
+  .proof{grid-template-columns:1fr}
+  .hero{padding-top:72px}
+}
+
+.case-date{margin-top:7px;color:#60708d;font-size:12px;font-weight:700}
+.evidence-label{margin:20px 0 8px;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#60708d}
+</style>
+</head>
+<body>
+<nav><div class="container"><div class="brand">Girlie Correa</div><div class="links">
+<a href="#about">About</a><a href="#results">Results</a><a href="#cases">Case Studies</a><a href="#framework">Framework</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div></div></nav>
+<header class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">● Available for opportunities · Remote</div>
+<h1>Meta Ads that turn <span>performance into business results.</span></h1>
+<p>I manage and optimize Meta campaigns across local service, real estate, automotive and high-ticket accounts—diagnosing bottlenecks, protecting proven performers, and testing the weakest part of the funnel.</p>
+<div class="ctas"><a class="btn primary" href="#cases">View Case Studies</a><a class="btn secondary" href="#contact">Get In Touch</a></div>
+</div>
+<div class="hero-panel">
+<h3>What I manage every day</h3>
+<div class="hero-list">
+<div><span class="dot"></span><span><b>45+ client ad accounts</b><br/>Across real estate, automotive, landscaping, car wash and other service businesses.</span></div>
+<div><span class="dot"></span><span><b>Lead generation &amp; Messenger campaigns</b><br/>Daily monitoring of CPR/CPL, CTR, frequency, CPM and lead quality.</span></div>
+<div><span class="dot"></span><span><b>Creative testing &amp; optimization</b><br/>Preserve what works, isolate what doesn't, test before rebuilding.</span></div>
+</div>
+</div>
+</div>
+</header>
+<div class="results-strip" id="results"><div class="container metrics">
+<div class="metric"><div class="num">1</div><div class="sub">Confirmed closed property deal from a newly introduced Meta creative</div></div>
+<div class="metric"><div class="num">190</div><div class="sub">Messaging conversations from an organic Page creative at ₱29.28 CPR</div></div>
+<div class="metric"><div class="num">166</div><div class="sub">Plantscape conversations at ₱15.33 CPR</div></div>
+<div class="metric"><div class="num">18.20x</div><div class="sub">Best-performing ad-set ROAS from high-ticket campaign</div></div>
+</div></div>
+<section class="section" id="about">
+<div class="container about-grid">
+<div>
+<div class="eyebrow">About Me</div>
+<h2>One media buyer. Different businesses. Same diagnostic discipline.</h2>
+<p class="lede">I don't optimize from one metric. A high CPM doesn't automatically mean an ad is failing. A high CTR doesn't automatically mean an ad is winning. And a cheap lead doesn't automatically mean a quality lead.</p>
+<p>I look at delivery, creative response, conversion efficiency and downstream lead quality together before deciding whether to scale, fix or stop.</p>
+</div>
+<div class="about-card">
+<h3>Current Meta Ads focus</h3>
+<div class="mini">
+<div class="pill"><b>Lead Gen</b><br/><span>Meta forms &amp; Messenger</span></div>
+<div class="pill"><b>Creative Testing</b><br/><span>Video, static, copy, hooks</span></div>
+<div class="pill"><b>CBO / ABO</b><br/><span>Campaign &amp; ad-set structure</span></div>
+<div class="pill"><b>Funnel Diagnosis</b><br/><span>Click → lead → quality → sale</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section soft">
+<div class="container">
+<div class="eyebrow">Proven Results</div>
+<h2>Numbers that speak for themselves.</h2>
+<p class="lede">A mix of business outcomes, lead-generation efficiency, creative testing and revenue-focused campaigns.</p>
+<div class="kpi-grid">
+<div class="kpi"><b>₱244,978</b>30-day purchase conversion value from the high-ticket case</div>
+<div class="kpi"><b>3.74x</b>30-day purchase ROAS</div>
+<div class="kpi"><b>9,528</b>Leads generated in the high-ticket account</div>
+<div class="kpi"><b>₱15.33</b>Plantscape cost per conversation</div>
+<div class="kpi"><b>₱29.28</b>Rob Peralta cost per conversation after maturing</div>
+</div>
+</div>
+</section>
+<section class="section" id="cases">
+<div class="container">
+<div class="eyebrow">Featured Work</div>
+<h2>Case studies that show how I think.</h2>
+<div class="case-grid">
+<article class="case">
+<div class="case-head"><span class="case-no">01</span><h3>Shang Properties</h3><div class="case-tag">Meta Lead Generation · Real Estate</div></div>
+<div class="case-body">
+<p><b>Challenge:</b> CPL was higher than an external benchmark being referenced, so the account needed continued creative testing—not an automatic rebuild.</p>
+<p><b>What I did:</b> Introduced fresh creatives inside the existing lead-generation campaign and monitored acquisition efficiency alongside actual lead quality.</p>
+<div class="statline"><div class="statbox"><b>3</b>Leads</div><div class="statbox"><b>₱90.15</b>CPL</div><div class="statbox"><b>2.69%</b>Link CTR</div></div>
+<div class="outcome"><b>1 confirmed closed property deal.</b><br/>The client confirmed that one of the leads generated by the newly introduced “Getting a Shang Home” creative became a closed deal.</div>
+<div class="proof one"><div class="evidence-label">Ads Manager / account evidence</div><img alt="Shang Properties Ads Manager proof" src="portfolio-evidence-1.png"/></div>
+<div class="proof"><img alt="Client confirmation" src="portfolio-evidence-2.png"/><img alt="Agency owner feedback" src="portfolio-evidence-3.png"/></div>
+<div class="quote">“That was all you and for constantly testing and never giving up.”<small>— Agency Owner feedback</small></div>
+</div>
+</article>
+<article class="case">
+<div class="case-head"><span class="case-no">02</span><h3>Rob Peralta</h3><div class="case-tag">Meta Messaging · Cleaning Services</div><div class="case-date">Reporting period: July 28 – August 25, 2026</div></div>
+<div class="case-body">
+<p><b>What I did:</b> Pulled an organic video from the client's Page and tested it alongside agency-made creatives. On day one it was over KPI, but I avoided killing it from an immature sample.</p>
+<div class="statline"><div class="statbox"><b>₱94.96</b>Day-1 CPR</div><div class="statbox"><b>₱29.28</b>Later CPR</div><div class="statbox"><b>190</b>Conversations</div></div>
+<div class="insight"><b>Optimization judgment:</b> The creative eventually became the highest-volume active messaging ad during the measured period. The lesson was knowing when to wait for enough data—not claiming an edit caused the CPR drop.</div>
+<p><b>Beyond Ads Manager:</b> When the client complained about lead quality, I reviewed Page inbox conversations and advised on prospect handling and service positioning.</p>
+<div class="proof"><div class="evidence-label">Ads Manager / account evidence</div><img alt="Rob Peralta first-day performance" src="portfolio-evidence-4.png"/><img alt="Rob Peralta mature performance" src="portfolio-evidence-5.png"/></div>
+</div>
+</article>
+<article class="case">
+<div class="case-head"><span class="case-no">03</span><h3>Plantscape</h3><div class="case-tag">Meta Messaging · CBO · Service Business</div><div class="case-date">Creative test highlighted: August 17, 2026</div></div>
+<div class="case-body">
+<p><b>Strategy:</b> Kept the mature CBO campaign intact and created a dedicated ad set for incoming creative tests instead of continuously adding them into the mature ad set.</p>
+<div class="statline"><div class="statbox"><b>₱15.33</b>CPR</div><div class="statbox"><b>166</b>Conversations</div><div class="statbox"><b>4.39%</b>Link CTR</div></div>
+<div class="outcome">The August 17 video produced about <b>31% lower CPR</b> than a high-volume established creative at ₱22.13 during the measured period.</div>
+<p>CBO still chose to allocate meaningful budget to the new ad set despite competing with a mature ad set.</p>
+<div class="proof"><div class="evidence-label">Ads Manager / account evidence</div><img alt="Plantscape new testing ad set" src="portfolio-evidence-6.png"/><img alt="Plantscape mature ad set" src="portfolio-evidence-7.png"/></div>
+</div>
+</article>
+<article class="case">
+<div class="case-head"><span class="case-no">04</span><h3>V-car</h3><div class="case-tag">Meta Messaging · Car Wash &amp; Auto Detailing</div><div class="case-date">Performance data shown through August 14, 2026</div></div>
+<div class="case-body">
+<p><b>Test design:</b> Selected a proven video, kept the creative unchanged, and tested different ad copy so messaging was the main variable.</p>
+<div class="table-wrap"><table>
+<tr><th>Metric</th><th>Established</th><th>Challenger</th></tr>
+<tr><td>Link CTR</td><td>0.91%</td><td><b>1.13%</b></td></tr>
+<tr><td>CTR All</td><td>2.42%</td><td><b>3.26%</b></td></tr>
+<tr><td>Cost / Conversation</td><td>₱21.82</td><td>₱22.05</td></tr>
+<tr><td>CPM</td><td>₱69.64</td><td>₱122.02</td></tr>
+</table></div>
+<div class="insight"><b>Takeaway:</b> Higher CTR didn't automatically make the challenger the winner. Higher CPM offset much of the response improvement, so I continued collecting data.</div>
+<div class="proof"><div class="evidence-label">Ads Manager / account evidence</div><img alt="V-car challenger" src="portfolio-evidence-8.png"/><img alt="V-car established ad" src="portfolio-evidence-9.png"/></div>
+</div>
+</article>
+<article class="case">
+<div class="case-head"><span class="case-no">05</span><h3>High-Ticket Online Course</h3><div class="case-tag">Sales Objective · Messenger Funnel</div></div>
+<div class="case-body">
+<p>This is the revenue-focused case from my original portfolio: Sales objective campaigns, Messenger conversion, purchase tracking, custom audiences, daily reporting and manual purchase tracking.</p>
+<div class="statline"><div class="statbox"><b>₱244,978</b>30-day value</div><div class="statbox"><b>3.74x</b>30-day ROAS</div><div class="statbox"><b>18.20x</b>Best ad-set ROAS</div></div>
+<p>Also generated 9,528 leads in the 30-day reporting period and identified the strongest custom-audience ad set in the 11-day spotlight.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="current-ecommerce">
+<div class="container">
+<div class="eyebrow">Current E-commerce Experience</div>
+<h2>PET N PET — Meta &amp; TikTok Paid Media</h2>
+<p class="lede">Current hands-on ecommerce work for a U.S. pet-products brand. I’m keeping this as experience rather than a finished results case study while the current tests are still maturing.</p>
+<div class="skills">
+<div class="skill"><h4>Meta Ecommerce</h4><p>Purchase-focused campaign setup, static/video creative testing, placement QA, catalog controls and winner / loser / under-delivered retesting.</p></div>
+<div class="skill"><h4>TikTok Shop / GMV Max</h4><p>CPO and ROI monitoring, SKU-level profitability analysis, product-mix diagnosis, manual budget control and profitability-based scale / hold / pause decisions.</p></div>
+<div class="skill"><h4>Funnel &amp; CRO</h4><p>Purchase-tracking QA, product-page review, email-capture improvements and decision-focused weekly reporting.</p></div>
+</div>
+</div>
+</section><section class="section dark" id="framework">
+<div class="container framework">
+<div>
+<div class="eyebrow">My Campaign DNA</div>
+<h2>Optimize before rebuilding.</h2>
+<p class="lede">When performance moves outside KPI, I first diagnose where the bottleneck is instead of automatically killing the entire campaign.</p>
+<div class="signature">Preserve what works.<br/>Isolate what doesn't.<br/>Test before rebuilding.</div>
+</div>
+<div class="flow">
+<div class="flow-card"><b>Weak CTR</b><br/>Investigate hook and creative. Launch fresh creative inside the existing campaign when structure is still sound.</div>
+<div class="flow-card"><b>Healthy CTR + expensive conversion</b><br/>Investigate the post-click, form, Messenger or sales funnel.</div>
+<div class="flow-card"><b>Frequency ↑ + CTR ↓</b><br/>Investigate fatigue and refresh creative rather than rebuilding blindly.</div>
+<div class="flow-card"><b>CPM ↑ + response stable</b><br/>Investigate delivery or auction pressure before blaming creative.</div>
+<div class="flow-card"><b>One weak ad</b><br/>Fix or replace the component—not automatically the whole campaign.</div>
+<div class="flow-card"><b>Repeated tests fail</b><br/>When enough evidence shows weak economics across components, consider restructuring.</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="skills">
+<div class="container">
+<div class="eyebrow">Skills &amp; Tools</div>
+<h2>What I bring to every account.</h2>
+<div class="skills">
+<div class="skill"><h4>Campaign Management</h4><p>Meta Ads Manager, CBO/ABO, lead generation, Messenger, Sales objective campaigns, budget pacing.</p></div>
+<div class="skill"><h4>Performance Analysis</h4><p>CPM, CTR, frequency, CPL/CPR, ROAS, funnel diagnosis, weekly reporting and decision-making.</p></div>
+<div class="skill"><h4>Testing &amp; Optimization</h4><p>Creative, copy, hook, audience and placement testing; fatigue analysis; winner protection; restructuring when justified.</p></div>
+<div class="skill"><h4>Business-Funnel Analysis</h4><p>Lead quality review, Page inbox analysis, sales handoff and downstream conversion thinking.</p></div>
+<div class="skill"><h4>Reporting</h4><p>Google Sheets, Microsoft Excel, Google Workspace and structured client reporting.</p></div>
+<div class="skill"><h4>Creative Workflow</h4><p>Canva, placement-specific asset planning, ad-level creative organization and organic-content testing.</p></div>
+</div>
+</div>
+</section>
+<section class="footer-cta" id="contact">
+<div class="container">
+<div class="eyebrow">Get In Touch</div>
+<h2>Ready to talk Meta Ads?</h2>
+<p class="lede" style="margin:0 auto;color:#d3def2">I'm available for Meta Ads and performance marketing opportunities.</p>
+<div class="ctas" style="justify-content:center"><a class="btn primary" href="mailto:girliecorrea123@gmail.com">girliecorrea123@gmail.com</a></div>
+</div>
+</section>
+<footer>© 2026 Girlie Correa · Meta Ads Media Buyer · Philippines</footer>
+</body></html>
